@@ -42,6 +42,73 @@
       </div>
     </section>
     <!-- End Main Section -->
+
+    <!-- Start Sign Up Pop Up Section -->
+    <section class="popup">
+      <button class="close-btn">
+        <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+      </button>
+
+      <div class="sigup-popup">
+        <h2 class="space">Create your account</h2>
+        <!-- Form Sign Up -->
+        <form action="" class="form">
+          <div class="inputs">
+            <div class="mt-1 mb-1">
+              <input class="input" type="text" placeholder="Name" />
+            </div>
+            <div class="mt-1 mb-1">
+              <input class="input" type="text" placeholder="Password" />
+            </div>
+            <div class="mt-1 mb-1">
+              <input class="input" type="text" placeholder="Email" />
+            </div>
+          </div>
+
+          <h4>Date of birth</h4>
+          <p class="color-grey">
+            <small>
+              This will not be shown publicly. Confirm your own age, even if
+              this account is for a business, a pet, or something else.
+            </small>
+          </p>
+          <div class="group mt-1">
+            <div class="basis-48">
+              <select class="input"></select>
+            </div>
+            <div class="basis-18">
+              <select class="input"></select>
+            </div>
+            <div class="basis-28">
+              <select class="input"></select>
+            </div>
+          </div>
+
+          <!-- Start Gender Section -->
+
+          <h4>Choose Your Gender</h4>
+          <div class="group mt-1">
+            <div class="female input base-30">
+              <input type="radio" name="gender" value="female" />
+              <label for="female"><b>Female</b></label>
+            </div>
+            <div class="male input base-30">
+              <input type="radio" name="gender" value="male" />
+              <label for="male"><b>Male</b></label>
+            </div>
+            <div class="other input base-30">
+              <input type="radio" name="gender" value="other" />
+              <label for="other"><b>Custom</b></label>
+            </div>
+          </div>
+
+          <!-- End Gender Section -->
+          <button id="close" class="btn-black">Create</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- End Sign Up Pop Up Section -->
   </body>
   <script src="js/index.js"></script>
 </html>
