@@ -135,6 +135,9 @@ html {
   font-weight: 600;
   height: fit-content;
 }
+.center {
+  text-align: center;
+}
 /* Form */
 .input {
   padding: 20px 7px 20px 7px;
