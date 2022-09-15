@@ -120,8 +120,13 @@ html {
 .open-popup {
   visibility: visible;
 }
-.sigup-popup {
+
+.signup-popup {
   padding: 10px 90px;
+}
+
+.signin-popup {
+  padding: 10px 80px;
 }
 .btn-black {
   background-color: #878a8c;
@@ -182,3 +187,48 @@ select {
   flex-basis: 30%;
 }
 /* Gender Section Ends */
+
+
+
+/* Media Query */
+@media only screen and (max-width: 1260px) {
+  .popup {
+    max-width: 70%;
+    top: 0;
+    width: 70%;
+    padding: .9em;
+  }
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .poster {
+    width: 100%;
+  }
+  .twitter-join {
+    width: 100%;
+  }
+  .image-back {
+    padding: 50px 0;
+  }
+  .btn-black {
+    padding-left: 100px;
+    padding-right: 110px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .popup {
+    max-width: 100%;
+    top: 0;
+    width: 100%;
+  }
+  .signup-popup {
+    padding-top: 3px;
+    padding: 24px;
+  }
+  .signin-popup {
+    padding-top: 3px;
+    padding: 24px;
+  }
+}
