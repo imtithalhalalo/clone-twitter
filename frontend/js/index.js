@@ -38,23 +38,23 @@ close_sign_up.addEventListener('click', closePopupSignUp)
 close_sign_in.addEventListener('click', closePopupSignIn)
 
 
-var month_box = document.getElementById('month')
-var days_box = document.getElementById('days')
-var years_box = document.getElementById('years')
+const month_box = document.getElementById('month')
+const days_box = document.getElementById('days')
+const years_box = document.getElementById('years')
 
 //months dropdown
-var month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+const month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 
-for (var i = 0; i < month.length; i++){
+for (const i of month){
     month_box.options.add(new Option(month[i]))
 }
 
 //days dropdown
-for (var i = 1; i <= 31; i++){
+for (let i = 1; i <= 31; i++){
     days_box.options.add(new Option(i))
 } 
 
 //years dropdown
-for (var i = 2022; i >= 1902 ; i--){
+for (let i = 2022; i >= 1902 ; i--){
     years_box.options.add(new Option(i))
 } 
