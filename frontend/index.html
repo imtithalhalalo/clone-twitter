@@ -61,7 +61,7 @@
               <input class="input" type="text" id="password" placeholder="Password" />
             </div>
             <div class="mt-1">
-              <input class="input" type="text" id="email" placeholder="Email" />
+              <input class="input" type="email" id="email" placeholder="Email" />
             </div>
           </div>
 
@@ -74,13 +74,13 @@
           </p>
           <div class="group mt-1">
             <div class="basis-48">
-              <select class="input" id="month_box" onchange="getMonth()" required></select>
+              <select class="input" id="month_box" required></select>
             </div>
             <div class="basis-18">
-              <select class="input" id="days_box" onchange="getDay()" required></select>
+              <select class="input" id="days_box" required></select>
             </div>
             <div class="basis-28">
-              <select class="input" id="years_box" onchange="getYear()" required></select>
+              <select class="input" id="years_box" required></select>
             </div>
           </div>
 
@@ -89,15 +89,15 @@
           <h4>Choose Your Gender</h4>
           <div class="group mt-1">
             <div class="female input base-30">
-              <input type="radio" name="gender" value="female" id="gender"/>
+              <input type="radio" name="gender" value="female" id="female" required/>
               <label for="female"><b>Female</b></label>
             </div>
             <div class="male input base-30">
-              <input type="radio" name="gender" value="male" id="gender"/>
+              <input type="radio" name="gender" value="male" id="male" required/>
               <label for="male"><b>Male</b></label>
             </div>
             <div class="other input base-30">
-              <input type="radio" name="gender" value="other" id="gender"/>
+              <input type="radio" name="gender" value="other" id="other" required/>
               <label for="other"><b>Custom</b></label>
             </div>
           </div>
