@@ -16,7 +16,7 @@
     <section class="container" id="con">
       <div class="poster image-back twitter-image">
         <img
-          src="images/twitter-logo.png"
+          src="../frontend/images/twitter-logo.png"
           alt=""
           width="50%"
           class="center-img"
@@ -55,13 +55,13 @@
         <form action="" class="form">
           <div class="inputs mb-1">
             <div class="mt-1">
-              <input class="input" type="text" placeholder="Name" />
+              <input class="input" type="text" id="name" placeholder="Name" />
             </div>
             <div class="mt-1">
-              <input class="input" type="text" placeholder="Password" />
+              <input class="input" type="text" id="password" placeholder="Password" />
             </div>
             <div class="mt-1">
-              <input class="input" type="text" placeholder="Email" />
+              <input class="input" type="text" id="email" placeholder="Email" />
             </div>
           </div>
 
@@ -74,13 +74,13 @@
           </p>
           <div class="group mt-1">
             <div class="basis-48">
-              <select class="input" id="month_box"></select>
+              <select class="input" id="month_box" onchange="getMonth()" required></select>
             </div>
             <div class="basis-18">
-              <select class="input" id="days_box"></select>
+              <select class="input" id="days_box" onchange="getDay()" required></select>
             </div>
             <div class="basis-28">
-              <select class="input" id="years_box"></select>
+              <select class="input" id="years_box" onchange="getYear()" required></select>
             </div>
           </div>
 
@@ -89,15 +89,15 @@
           <h4>Choose Your Gender</h4>
           <div class="group mt-1">
             <div class="female input base-30">
-              <input type="radio" name="gender" value="female" />
+              <input type="radio" name="gender" value="female" id="gender"/>
               <label for="female"><b>Female</b></label>
             </div>
             <div class="male input base-30">
-              <input type="radio" name="gender" value="male" />
+              <input type="radio" name="gender" value="male" id="gender"/>
               <label for="male"><b>Male</b></label>
             </div>
             <div class="other input base-30">
-              <input type="radio" name="gender" value="other" />
+              <input type="radio" name="gender" value="other" id="gender"/>
               <label for="other"><b>Custom</b></label>
             </div>
           </div>
@@ -123,7 +123,7 @@
         </div>
 
         <!-- Form Sign Up -->
-        <form action="" class="form">
+        <form action="" id="form">
           <div class="inputs">
             <div class="mt-1 mb-1">
               <input class="input" type="text" placeholder="Email" />
@@ -139,5 +139,5 @@
 
     <!-- End Sign Up Pop Up Section -->
   </body>
-  <script src="js/index.js"></script>
+  <script src="../frontend/js/index.js"></script>
 </html>
