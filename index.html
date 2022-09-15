@@ -55,13 +55,13 @@
         <form action="" class="form">
           <div class="inputs mb-1">
             <div class="mt-1">
-              <input class="input" type="text" placeholder="Name" />
+              <input class="input" type="text" id="name" placeholder="Name" />
             </div>
             <div class="mt-1">
-              <input class="input" type="text" placeholder="Password" />
+              <input class="input" type="text" id="password" placeholder="Password" />
             </div>
             <div class="mt-1">
-              <input class="input" type="text" placeholder="Email" />
+              <input class="input" type="text" id="email" placeholder="Email" />
             </div>
           </div>
 
@@ -74,13 +74,13 @@
           </p>
           <div class="group mt-1">
             <div class="basis-48">
-              <select class="input" id="month_box"></select>
+              <select class="input" id="month" onchange="getMonth()"></select>
             </div>
             <div class="basis-18">
-              <select class="input" id="days_box"></select>
+              <select class="input" id="days" onchange="getDay()"></select>
             </div>
             <div class="basis-28">
-              <select class="input" id="years_box"></select>
+              <select class="input" id="years" onchange="getYear()"></select>
             </div>
           </div>
 
