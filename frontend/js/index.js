@@ -59,17 +59,37 @@ for (let i = 2022; i >= 1902 ; i--){
     years_box.options.add(new Option(i))
 } 
 
-let getMonth = () => {
-    var value = month_box.options[month_box.selectedIndex].value
-    return value
+const createBtn=document.getElementById("close");
+const fullname=document.getElementById("name");
+const password=document.getElementById("password");
+const email=document.getElementById("email");
+const genderSelect =document.querySelectorAll('input[name="gender"]');      
+let gender;
+
+
+const getGender = () => { 
+    for(i = 0; i < genderSelect.length; i++) {
+        if(genderSelect[i].checked){
+            gender=genderSelect[i];
+        }
+    }
 }
 
-const getDay = () => {
-    var value = days_box.options[days_box.selectedIndex].value
-    return value
+const signUp=(e)=>{
+    getGender();
+    e.preventDefault();
+    let formData = new FormData();
+    formData.append("name", fullname.value);
+    formData.append("password", password.value);
+    formData.append("email", email.value);
+    formData.append("month", month_box.value);
+    formData.append("date", days_box.value);
+    formData.append("year", years_box.value);
+    formData.append("gender", gender.value);
+    fetch(`http://localhost/clone-twitter/backend/signup.php `, {
+        method: 'POST',
+        body: formData
+    });
 }
+createBtn.addEventListener("click",signUp);
 
-const getYear = () => {
-    var value = years_box.options[years_box.selectedIndex].value
-    return value
-}
