@@ -67,7 +67,7 @@ main {
   padding: 150px 0;
 }
 .twitter-image {
-  background-image: url("/images/background.png");
+  background-image: url("../images/background.png");
 }
 /* Twitter Join */
 .twitter-join {
