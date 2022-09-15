@@ -74,13 +74,13 @@
           </p>
           <div class="group mt-1">
             <div class="basis-48">
-              <select class="input" id="month" onchange="getMonth()"></select>
+              <select class="input" id="month_box" onchange="getMonth()" required></select>
             </div>
             <div class="basis-18">
-              <select class="input" id="days" onchange="getDay()"></select>
+              <select class="input" id="days_box" onchange="getDay()" required></select>
             </div>
             <div class="basis-28">
-              <select class="input" id="years" onchange="getYear()"></select>
+              <select class="input" id="years_box" onchange="getYear()" required></select>
             </div>
           </div>
 
@@ -123,7 +123,7 @@
         </div>
 
         <!-- Form Sign Up -->
-        <form action="" class="form">
+        <form action="" id="form">
           <div class="inputs">
             <div class="mt-1 mb-1">
               <input class="input" type="text" placeholder="Email" />
