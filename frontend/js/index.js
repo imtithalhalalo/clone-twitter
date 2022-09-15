@@ -38,9 +38,9 @@ close_sign_up.addEventListener('click', closePopupSignUp)
 close_sign_in.addEventListener('click', closePopupSignIn)
 
 
-var month_box = document.getElementById('month_box')
-var days_box = document.getElementById('days_box')
-var years_box = document.getElementById('years_box')
+var month_box = document.getElementById('month')
+var days_box = document.getElementById('days')
+var years_box = document.getElementById('years')
 
 //months dropdown
 var month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
