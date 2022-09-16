@@ -4,6 +4,7 @@ header('Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE');
 header('Access-Control-Allow-Headers: Origin, Content-Type, Accept, Authorization, X-Request-With');
 
 include("connection/connection.php");
+ 
 
 $password =hash("sha256",$_POST["password"]);
 $email=$_POST["email"];
@@ -21,5 +22,5 @@ if($num_rows > 0){
     $response["success"] = false;
 }
 echo json_encode($response);
-
+echo "hi";
 ?>
