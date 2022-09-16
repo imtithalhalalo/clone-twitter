@@ -5,7 +5,6 @@ header('Access-Control-Allow-Headers: Origin, Content-Type, Accept, Authorizatio
 
 include("connection/connection.php");
  
-
 $password =hash("sha256",$_POST["password"]);
 $email=$_POST["email"];
 
@@ -18,8 +17,10 @@ $num_rows = $array->num_rows;
 $response = [];
 if($num_rows > 0){
     $response["success"] = true;
+
 }else{
     $response["success"] = false;
+    
 }
 echo json_encode($response);
 
