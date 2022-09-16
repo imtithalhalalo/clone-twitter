@@ -20,7 +20,6 @@ if($num_rows > 0){
 }else{
     $response["success"] = false;
 }
-
-// echo json_encode($response);
+echo json_encode($response);
 
 ?>
