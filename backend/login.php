@@ -22,5 +22,5 @@ if($num_rows > 0){
     $response["success"] = false;
 }
 echo json_encode($response);
-echo "hi";
+
 ?>
