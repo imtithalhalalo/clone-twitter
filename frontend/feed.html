@@ -17,7 +17,7 @@
   </head>
   <body>
     <!-- Start Navigation Bar Column -->
-    <header>
+    <section class="header">
       <div class="nav-links">
         <a href="">
           <i class="fa fa-twitter fa-3x color-blue"></i>
@@ -42,16 +42,63 @@
           </div>
         </div>
       </div>
-    </header>
+    </section>
     <!-- End Navigation Bar Column -->
 
     <!-- Start Main Part -->
-    <main>
+    <section class="main">
       <div class="flex">
         <div class="tweets-feed">
           <div class="home-bar">
             <span>Home</span>
             <img src="images/shining.png" alt="" width="18px" height="18px" />
+          </div>
+          <div class="new-tweet">
+            <img class="profile-img" src="images/profile.png" alt="" />
+            <div class="new-details">
+              <input type="text" placeholder="What's happening?" />
+              <div class="tweet-action">
+                <div class="image-upload">
+                  <label for="file-input">
+                    <img
+                      src="images/upload-img.png"
+                      alt=""
+                      width="18px"
+                      height="18px"
+                    />
+                  </label>
+
+                  <input id="file-input" type="file" />
+                </div>
+                <button class="tweet-button">Tweet</button>
+              </div>
+            </div>
+          </div>
+          <div class="tweet">
+            <img class="profile-img" src="images/profile.png" alt="" />
+            <div class="tweet-details">
+              <div class="user-details">
+                <div class="user">
+                  <a href="" class="fullname"
+                    >Imtithal Halalo
+                    <span class="username">@halalo_i</span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="tweet-txt">
+                <p>
+                  Select your favorite social network and share our icons with
+                  your contacts or friends, if you do not have these social
+                  networks copy the link and paste it in the one you use.
+                </p>
+              </div>
+
+              <div class="tweet-fav">
+                <i class="material-icons-outlined"> favorite_border </i>
+                <span>78</span>
+              </div>
+            </div>
           </div>
         </div>
         <div class="search-feed">
@@ -61,7 +108,7 @@
           </div>
         </div>
       </div>
-    </main>
+    </section>
     <!-- End Main Part -->
   </body>
 </html>

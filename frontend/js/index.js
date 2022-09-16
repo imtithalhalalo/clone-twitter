@@ -25,8 +25,8 @@ open_sign_in .addEventListener('click', openPopupSignIn)
 
 //close popup sign up & sign in
 const closePopupSignUp = () => {
-        popup_sign_up.classList.remove('open-popup')
-        container.classList.remove('grey-fade-over')
+    popup_sign_up.classList.remove('open-popup')
+    container.classList.remove('grey-fade-over')
 }
 
 const closePopupSignIn = () => {
@@ -90,6 +90,7 @@ const signUp=(e)=>{
         method: 'POST',
         body: formData
     });
+    popup_sign_up.classList.remove('open-popup')
 }
 createBtn.addEventListener("click",signUp);
 
